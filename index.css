@@ -1,0 +1,217 @@
+/* Resetting basic margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a47;  /* Deep blue background */
+    padding: 20px 50px;
+    color: #fff;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+
+}
+
+.navbar ul li a {
+    flex-wrap: wrap;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #50b8a2;  /* Soft teal on hover */
+}
+
+/* Home Section */
+.home-section {
+    background: linear-gradient(135deg, #1e2a47, #4a5a77);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-section h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #50b8a2; /* Teal accent */
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #2b9e84; /* Darker teal on hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    color: #1e2a47;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #1e2a47;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #1e2a47;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #1e2a47;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #1e2a47;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar ul {
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

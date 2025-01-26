@@ -1,0 +1,151 @@
+/* General styles */
+
+/* Resetting basic margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Typography */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e2a47;  /* Deep blue background */
+    padding: 20px 50px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #50b8a2;  /* Soft teal on hover */
+}
+
+/* CONTENT SECTION  */
+
+.services-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #1e2a47;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Service Cards */
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.service-card img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-info {
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.service-info h3 {
+    font-size: 2rem;
+    color: #1e2a47;
+    margin-bottom: 15px;
+}
+
+.service-info p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .navbar {
+        display: flex;
+    }
+
+    .navbar ul {
+        overflow: hidden;
+        flex-wrap: wrap;
+    }
+
+    .service-card img {
+        max-width: 100%;
+    }
+}
